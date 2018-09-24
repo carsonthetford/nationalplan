@@ -2,55 +2,176 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Source+Serif+Pro:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/national_plan.css">
+
 	<title>Benefits from Legalshield</title>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/national_plan.js"></script>
+
 </head>
 <body>
+<div class="container-fluid">
+	<div class="nav-bar row" id="benefits_Nav">
+	
+		<img class="corp-logo col-xs-1 col-sm-2" id="corp_Logo" src="images/LegalShield-NewLogo-FullColor.svg">
+	
+		<img class="client-logo col-xs-1 col-sm-2" id="client_Logo" src="#">
+	</div>
 
-<div class="nav-bar" id="benefits_Nav">
+	<div class="cta-wrapper" id="cta_Wrapper">
 	
-	<img class="corp-logo" id="corp_Logo">
+		<div class="hero-background">
 	
-	<img class="client-logo" id="client_Logo">
+			<img src="images/LegalShieldHero.png" id="bkg_Hero">
+		</div>
+
+		<div class="row cta-row">
+			<p class="col-sm-6" id="cta_Title">READY TO PROTECT YOUR RIGHTS?</p>
+	
+			  <!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary video-btn col-sm-3" data-toggle="modal" data-src="https://player.vimeo.com/video/247325195" data-target="#myModal">Video Overview
+			</button>
+  	</div>
+
+  	<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="videooverviewofproduct" aria-hidden="true">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+	     	 	<div class="modal-body">
+		     		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         	 	<span aria-hidden="true">&times;</span>
+       	 	</button>      
+        		<!-- 16:9 aspect ratio -->
+						<div class="embed-responsive embed-responsive-16by9">
+  						<iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always"></iframe>
+						</div>
+       			</div>
+    			</div>
+  			</div>
+		</div> 
+	</div>
 </div>
 
-<div class="cta-wrapper" id="cta_Wrapper">
-
-	<img src="" class="background-hero" id="bkg_Hero">
+<div class="container-fluid">
+	<div class="row">
+		<div class="features-copy col-xs-12 col-sm-6 col-sm-offset-3">
 	
-	<p id="cta_Title"></p>
+			<h2>WHY DO YOU NEED LEGAL PROTECTION?</h2>
 
-	<a href="" target="_blank"><button id="cta_Video"></button></a>
+			<ul id="features_Copy">
+		
+				<li><strong>Your rights matter.</strong> From minor questions to major issues, you deserve to know your legal rights in any situation.</li>		
+		
+				<li><strong>Your time is valuable. </strong>When you have a question or issue, it shouldn’t take days to connect with a lawyer.</li>		
+		
+				<li><strong>Lawyers are expensive! </strong>The average hourly rate for a lawyer is $284.*</li>		
+			</ul>
+			<p class="subtext">* The Legal Needs of American Families. A Research Study Conducted by Decision Analyst, Inc. Commissioned by LegalShield</p>
+	</div>
 </div>
 
-<div class="features-copy">
-	
-	<ul id="features_Copy">
-		
-		<h2></h2>
-		
-		<li></li>		
-		
-		<li></li>		
-		
-		<li></li>		
-	</ul>
+<!-- <div class="container-fluid">
+	<div class="row">
+		<div class="enrollment-button col-sm-3">
+
+			<a href="" target="_blank"><button id="cta_Enroll"></button></a>
+		</div>
+	</div>-->
 </div>
 
-<div class="enrollment-button">
+<div class="container-fluid">
+	<div class="row">
+		<div class="plan-info" id="plan_Info">
+			<div id="covered_Services">
+				<p>LegalShield is there for you, your spouse and your children. Click here for complete coverage details.</p>
+				
+				<p>The LegalShield plan includes the following benefits:*</p>
+				
+				<ul>Family Matters
+					<li>Administrative Hearing</li>
+					<li>Adoption</li>
+					<li>Domestic Violence Protection</li>
+					<li>Elder Care Issues</li>
+					<li>Guardianship or Conservatorship</li>
+					<li>Immigration Assistance</li>
+					<li>Incompetency Defense</li>
+					<li>Juvenile Court Defense</li>
+					<li>Name Change</li>
+					<li>Prenuptial Agreement</li>
+				</ul>
 
-	<a href="" target="_blank"><button id="cta_Enroll"></button></a>
-</div>
+				<ul>Financial
+					<li>Affidavits</li>
+					<li>Bankruptcy</li>
+					<li>Civil Litigation</li>
+					<li>Consumer Protection</li>
+					<li>Debt Collection</li>
+					<li>Identity Theft</li>
+					<li>Personal Property</li>
+					<li>Promissory Notes</li>
+					<li>Small Claims Assistance</li>
+					<li>Tax Audit and Collection Service</li>
+				</ul>
 
-<div class="plan-info" id="plan_Info">
-	<div id="covered_Services"></div>
-	<div id="mobile_App"></div>
-	<div id="pricing"></div>
-	<div id="provider"></div>
-	<div id="testimonials"></div>
-	<div id="enroll_Info"></div>
+				<ul>Home
+					<li>Boundary or Title Disputes</li>
+					<li>Deeds</li>
+					<li>Eviction and Tenant Problems</li>
+					<li>Foreclosure</li>
+					<li>Garnishment</li>
+					<li>Home Equity Loan</li>
+					<li>Mortgages</li>
+					<li>Property Tax Assessments</li>
+					<li>Purchase/Sale of Home</li>
+					<li>Repossession</li>
+					<li>Zoning Applications</li>
+				</ul>
+
+				<ul>Estate Planning
+					<li>Living Will/Physician’s Directive</li>
+					<li>Power of Attorney</li>
+					<li>Probate</li>
+					<li>Trusts</li>
+					<li>Wills and Codicils</li>
+				</ul>
+
+				<ul>Auto
+					<li>Driver’s License Restoration</li>
+					<li>Motor Vehicle Property Damage</li>
+					<li>Moving Traffic Violations</li>
+				</ul>
+
+				<ul>General
+					<li>24/7 Emergency Access</li>
+					<li>Convenient Mobile App</li>
+					<li>Document Review</li>
+					<li>Demand Letters and Phone Calls Made on Your Behalf</li>
+					<li>Access to Legal Forms</li>
+					<li>Telephone and Office Consultations</li>
+				</ul>
+			</div>
+			<div id="mobile_App">
+				<p><strong>Your Law Firm at Your Fingertips</strong>The LegalShield mobile app puts your law firm in the palm of your hand.</p>
+
+				<ul>With the LegalShield Mobile App you can:
+					<li>Call your law firm directly.</li>
+					<li>Snap and send speeding tickets straight to your law firm.</li>
+					<li>Complete and send your online Will Questionnaire.</li>
+					<li>Receive 24-hour legal access for covered emergencies.</li>
+					<li>Access basic plan information, auto accident tips and more!</li>
+				</ul>
+				<p>After you enroll and create your LegalShield account you can download the mobile app and login using your created account username and password.</p>
+			</div>
+			<div id="pricing"></div>
+			<div id="provider"></div>
+			<div id="testimonials"></div>
+			<div id="enroll_Info"></div>
+		</div>
+	</div>
 </div>
 
 <footer id="disclaimer"></footer>
-
 </body>
 </html>
